@@ -108,7 +108,7 @@ body
 
   .back
     {
-
+      display: block;
         border: none;
         padding: 10px;
         border-radius: 12px;
