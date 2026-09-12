@@ -69,11 +69,13 @@ function handlePreview()
           {showPreview && (
         <div className="displayPreview">
           <Preview data={formData} />
-        </div>
-)}
-    <div>
+          <div>
       <button className='back' onClick={()=>{setShowPreview(false)}}>Back to form</button>
     </div>
+        </div>
+        
+)}
+    
       </div>
     </>
   )
