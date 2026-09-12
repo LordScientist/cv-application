@@ -71,6 +71,9 @@ function handlePreview()
           <Preview data={formData} />
         </div>
 )}
+    <div>
+      <button className='back' onClick={()=>{setShowPreview(false)}}>Back to form</button>
+    </div>
       </div>
     </>
   )

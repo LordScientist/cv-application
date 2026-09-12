@@ -50,19 +50,19 @@ function GeneralInfo({data,onChange,onComplete})
                                 <div className="field">
                                     <label htmlFor="name">Full Name</label>
                                     <input className="input" id="name" name ="name"  value={data.name} onChange={(e) => onChange('general',e)} placeholder="Enter your name"/>
-                                    {errors.name && <p>{errors.name}</p>}
+                                    {errors.name && <p className="error">{errors.name}</p>}
                                 </div>
 
                                 <div className="field">
                                     <label htmlFor="email">Personal Email</label>
                                     <input className="input" id="email" name="email" value={data.email} onChange={(e) => onChange('general',e)} placeholder="Enter your email" />
-                                    {errors.email && <p>{errors.email}</p>}
+                                    {errors.email && <p className="error">{errors.email}</p>}
                                 </div>
 
                                 <div className="field">
                                     <label htmlFor="phone">Active Phone Number</label>
                                     <input className="input" id="phone" name="phone" value={data.phone} onChange={(e) =>onChange('general',e)} placeholder="Enter your mobile Number" />
-                                    {errors.phone && <p>{errors.phone}</p>}
+                                    {errors.phone && <p className="error">{errors.phone}</p>}
                                 </div>
                             <div className="submission">
                                 <button onClick={() => {handleSubmit()}} className="submit">Submit</button>

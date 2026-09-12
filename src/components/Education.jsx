@@ -49,19 +49,19 @@ const [errors,setErrors] = useState({})
                             <div className="field">
                                 <label htmlFor="institution">Name of Institution</label>
                                 <input className="input" id="institution" name ="institution"  value={data.institution} onChange={(e)=>onChange('education',e)} placeholder="Name of Institution"/>
-                                {errors.institution && <p>{errors.institution}</p>}
+                                {errors.institution && <p className="error">{errors.institution}</p>}
                             </div>
 
                             <div className="field">
                                 <label htmlFor="titleOfStudy">Programme of Study</label>
                                 <input className="input" id="titleOfStudy" name="titleOfStudy" value={data.titleOfStudy} onChange={(e)=> onChange('education',e)} placeholder="Enter the title of your Studies" />
-                                {errors.titleOfStudy && <p>{errors.titleOfStudy}</p>}
+                                {errors.titleOfStudy && <p className="error" >{errors.titleOfStudy}</p>}
                             </div>    
                             
                             <div className="field">
-                                <label htmlFor="duration">DUration of Studies</label>
+                                <label htmlFor="duration">Duration of Studies</label>
                                 <input className="input" id="duration" name="duration" value={data.duration} onChange={(e)=> onChange('education',e)} placeholder="Duration of Studies" />
-                                {errors.duration && <p>{errors.duration}</p>}
+                                {errors.duration && <p className="error">{errors.duration}</p>}
                             </div>
                             <div className="submission">
                                 <button onClick={() => {handleSubmit()}} className="submit">Submit</button>

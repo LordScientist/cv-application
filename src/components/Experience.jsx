@@ -54,25 +54,25 @@ const [errors,setErrors] = useState({})
                             <div className="field">
                                 <label htmlFor="company">Name of Company</label>
                                 <input className="input" id="company" name ="company"  value={data.company} onChange={(e)=>{onChange('experience',e)}} placeholder="Name of Company"/>
-                                {errors.company && <p>{errors.company}</p>}
+                                {errors.company && <p className="error">{errors.company}</p>}
                             </div>
 
                             <div className="field">
                                 <label htmlFor="position">Job Role</label>
                                 <input className="input" id="position" name="position" value={data.position} onChange={(e)=>onChange('experience',e)} placeholder="Your position(s) held" />
-                                {errors.position && <p>{errors.position}</p>}
+                                {errors.position && <p className="error">{errors.position}</p>}
                             </div>
 
                             <div className="field">
                                 <label htmlFor="responsibility">Assigned Roles</label>
                                 <input className="input" name="responsibility" value={data.responsibility} onChange={(e)=> onChange('experience',e)} placeholder="What was your assigned role/responsibility" />
-                                {errors.responsibility && <p>{errors.responsibility}</p>}
+                                {errors.responsibility && <p className="error">{errors.responsibility}</p>}
                             </div>
 
                             <div className="field">
                                 <label htmlFor="yearsOfExperience">Years of Experience</label>
                                 <input className="input" id="yearsOfExperience" name="yearsOfExperience" value={data.yearsOfExperience} onChange={(e)=>onChange('experience',e)} placeholder="How many years of experience" />
-                                {errors.yearsOfExperience && <p>{errors.yearsOfExperience}</p>}
+                                {errors.yearsOfExperience && <p className="error">{errors.yearsOfExperience}</p>}
                             </div>
                             <div>
                                 <button onClick={() => {handleSubmit()}} className="submit">Submit</button>
