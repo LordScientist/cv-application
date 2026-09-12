@@ -1,0 +1,26 @@
+.preview-field
+    {
+        font-family: Poppins;
+        font-size: 15.7px;
+    }
+.CV
+    {
+        border: none;
+        padding: 10px;
+        border-radius: 12px;
+        color:rgba(0, 0, 0, 0.7) ;
+    }
+
+.CV:hover
+    {
+        background:linear-gradient(135deg, #37f7a1, #ab75e0, #0e454d);
+        -webkit-backdrop-filter: blur(25px);
+        backdrop-filter: blur(25px);
+        box-shadow: 0 3px 45px rgba(103, 229, 103,0.7);
+        color: rgb(63, 220, 220);
+    }
+
+.CV-holder
+    {
+        margin-top: 10px;
+    }

@@ -1,0 +1,73 @@
+
+.general-field
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 24px;
+        flex: 1;
+        background: rgba(4, 130, 255, 0.15);  
+        -webkit-backdrop-filter: blur(20px);     
+        backdrop-filter: blur(20px);   
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+    }
+
+.field
+    {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        
+    }
+
+.field label
+    {
+        width: 160px;
+        flex-shrink: 0;
+    }
+
+.submit
+    {
+        border: none;
+        padding: 10px;
+        border-radius: 12px;
+        color:rgba(103, 229, 103,0.7) ;
+    }
+
+.submit:hover
+    {
+        background: rgba(103, 229, 103,0.7);
+        -webkit-backdrop-filter: blur(25px);
+        backdrop-filter: blur(25px);
+        box-shadow: 0 3px 45px rgba(103, 229, 103,0.7);
+        color: rgb(63, 220, 220);
+    }
+
+
+.input
+    {
+        background-color: rgb(102, 169, 236);
+        border: none;
+        border-radius: 6px;
+    }
+
+.edit
+    {
+        border: none;
+        padding: 10px;
+        border-radius: 12px;
+        color:rgba(253, 158, 95, 0.7) ;
+    }
+
+.edit:hover
+    {
+        background: rgba(119, 216, 255, 0.7);
+        -webkit-backdrop-filter: blur(25px);
+        backdrop-filter: blur(25px);
+        box-shadow: 0 3px 45px rgba(103, 229, 103,0.7);
+        color: rgb(63, 220, 220);
+    }
